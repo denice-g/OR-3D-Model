@@ -175,7 +175,7 @@ function createTableCooler2() {
 }
 scene.add(createTableCooler2());
 
-function createLifelinkTable() {
+function createLifelineTable() {
   const lifelineTable = new THREE.Group();
   const table = new THREE.Mesh(
     new THREE.BoxGeometry(3, 0.15, 1),
@@ -200,7 +200,7 @@ function createLifelinkTable() {
     lifelineTable.add(leg);
   });
 
-  const label = createLabel('Lifeline Table');
+  const label = createLabel('Lifelink Table');
   label.position.set(0, 1.6, 0);
   lifelineTable.add(label);
 
@@ -323,7 +323,7 @@ function createMayo() {
   label.position.set(0, 1.6, 0);
   Mayo.add(label);
 
-  Mayo.position.set(-0.5, 0, -1.3);
+  Mayo.position.set(1, 0, -1.3);
   return Mayo;
 }
 scene.add(createMayo());
@@ -522,7 +522,7 @@ const scrubTech1 = new THREE.Mesh(
   new THREE.CylinderGeometry(0.3, 0.3, 3),
   new THREE.MeshStandardMaterial({ color: 0xF08080 })
 );
-scrubTech1.position.set(1, 0, -1);
+scrubTech1.position.set(-0.5, 0, -1);
 scene.add(scrubTech1);
 
 const scrubTech2 = new THREE.Mesh(
