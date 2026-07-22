@@ -175,7 +175,7 @@ function createTableCooler2() {
 }
 scene.add(createTableCooler2());
 
-function createLifelineTable() {
+function createLifelinkTable() {
   const lifelineTable = new THREE.Group();
   const table = new THREE.Mesh(
     new THREE.BoxGeometry(3, 0.15, 1),
@@ -493,7 +493,7 @@ const anesthesia = new THREE.Mesh(
 );
 anesthesia.position.set(-4, 0, -1);
 scene.add(anesthesia);
-const labelAnesthesia = createLabel('Anesthesia');
+const labelAnesthesia = createLabel('Anesthesia/Respitory');
 labelAnesthesia.position.set(-4, 0, -1);
 scene.add(labelAnesthesia);
 
